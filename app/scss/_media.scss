@@ -1,0 +1,59 @@
+/**========================================================================
+  **                            Адаптив
+  **========================================================================**/
+@media (max-width: 767px) {
+  .news-list__date,
+  .news-list__author,
+  .news-list__item-date,
+  .news-list__item-author {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    margin: 60px auto;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__btn.back-btn,
+  .header__btn.reset-comments-btn {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 100;
+    color: #fff;
+    border-bottom: none;
+    background-color: #839481e6;
+  }
+  .header__btn.back-btn {
+    top: 0;
+  }
+  .header__btn.reset-comments-btn {
+    bottom: 0;
+  }
+  body._pc button.header__btn.back-btn:hover,
+  body._pc button.header__btn.reset-comments-btn:hover {
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+  }
+  .news__title {
+    width: 90%;
+  }
+  .news-page__header {
+    padding: 0 0 40px;
+  }
+}
+@media (max-width: 500px) {
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  .news-list__name,
+  .news-list__item-title {
+    padding-left: 20px;
+  }
+}

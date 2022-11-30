@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker News</title>
+    <link rel="icon" type="image/png" href="images/logo.svg" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">
+          <a href="#">HackerNews</a>
+        </h1>
+        <div class="header__btns">
+          <button class="header__btn top-btn">Лучшее</button>
+          <button class="header__btn new-btn">Свежее</button>
+          <button class="header__btn reset-btn">Обновить</button>
+          <button class="header__btn back-btn hidden">Назад к новостям</button>
+          <button class="header__btn reset-comments-btn hidden">
+            Обновить комментарии
+          </button>
+        </div>
+      </header>
+      <section class="home-page">
+        <table class="news-list">
+          <thead class="news-list__header">
+            <tr class="news-list__titles row">
+              <th class="news-list__name"><span>Название</span></th>
+              <th class="news-list__rating">
+                <button class="news-list__rating-btn">
+                  <svg
+                    class="news-list__rating-svg"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0"
+                      y1="1"
+                      x2="18"
+                      y2="1"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                    <line
+                      x1="0"
+                      y1="9"
+                      x2="18"
+                      y2="9"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                    <line
+                      x1="0"
+                      y1="17"
+                      x2="18"
+                      y2="17"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                  </svg>
+                  Рейтинг
+                </button>
+              </th>
+              <th class="news-list__author">Автор</th>
+              <th class="news-list__date">
+                <button class="news-list__date-btn">
+                  Дата
+                  <svg
+                    class="news-list__date-svg"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0"
+                      y1="1"
+                      x2="18"
+                      y2="1"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                    <line
+                      x1="0"
+                      y1="9"
+                      x2="18"
+                      y2="9"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                    <line
+                      x1="0"
+                      y1="17"
+                      x2="18"
+                      y2="17"
+                      stroke-width="1"
+                      stroke="#000"
+                    />
+                  </svg>
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="news-list__body"></tbody>
+        </table>
+        <div class="preloader preloader-news"></div>
+        <div class="news-list__error"></div>
+      </section>
+      <section class="news-page hidden">
+        <div class="news-page__header"></div>
+        <div class="news-page__comments comments">
+          <div class="comments__amount"></div>
+          <div class="comments__wrapper"></div>
+          <div class="preloader preloader-comments"></div>
+          <div class="comments__message hidden">Comments not found. 😖</div>
+          <div class="comments__error"></div>
+        </div>
+      </section>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
